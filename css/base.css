@@ -36,7 +36,7 @@ body{
   flex-direction: column;
 }
 
-.topNav,.headBox,.serviceBox,.skillBox,.projectBox{
+.topNav,.headBox,.serviceBox,.skillBox,.projectBox,footer{
   width: 80%;
   padding: 3vh 10%;
 }

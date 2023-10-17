@@ -24,6 +24,7 @@
     <section class="topNav">
       <div>
         <h1>dp</h1>
+        <i class="material-symbols-outlined">atr</i>
       </div>
 
       <nav>
@@ -48,7 +49,20 @@
       .topNav h1 {
         font-size: 3rem;
       }
-
+      .topNav div{
+        display: flex;
+      }
+      .topNav div i{
+        animation: wind 30s linear infinite;
+      }
+      @keyframes wind{
+        0%{
+          transform: rotateY(0);
+        }
+        100%{
+          transform: rotateY(360deg);
+        }
+      }
       .topNav button {
         display: none;
         width: 35px;
@@ -401,32 +415,32 @@
         <div class="exp">
           <span>
             <i class="material-symbols-outlined">work_history</i>
-            <small>2018 - 2015</small>
+            <small>2018 - 2020</small>
           </span>
           <p>
             <span>Web Development</span>
-            <small>Amazon Inc.</small>
+            <small>Softnage.</small>
           </p>
         </div>
 
         <div class="exp">
           <span>
             <i class="material-symbols-outlined">work_history</i>
-            <small>2012 - 2015</small>
+            <small>2020 - 2023</small>
           </span>
           <p>
             <span>Mobile Development</span>
-            <small>Amazon Inc.</small>
+            <small>Dev & Pixels.</small>
           </p>
         </div>
         <div class="exp">
           <span>
             <i class="material-symbols-outlined">work_history</i>
-            <small>2018 - 2020</small>
+            <small>2020 - 2023</small>
           </span>
           <p>
             <span>SEO Optimization</span>
-            <small>Softnage.</small>
+            <small>Dev & Pixels.</small>
           </p>
         </div>
         <div class="exp">
@@ -436,7 +450,7 @@
           </span>
           <p>
             <span>UI/UX Design</span>
-            <small>Amazon Inc.</small>
+            <small>Dev & Pixels.</small>
           </p>
         </div>
       </section>
@@ -559,6 +573,22 @@
         background: var(--theme);
       }
     </style>
+
+    <footer>
+      <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+    </footer>
+    <style>
+      footer{
+        display: flex;
+        background: black;
+        gap: 1.5rem;
+      }
+      footer i{
+        color: var(--theme);
+        font-size: 2rem;
+      }
+    </style>
   </section>
 
   <style>
@@ -612,7 +642,7 @@
         gap: 0;
         background: black;
         width: 150px;
-        z-index: 10;
+        z-index: 1000;
         border-radius: 0 0 10px 0;
         padding: 20px;
         position: fixed;

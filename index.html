@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link rel="stylesheet" href="css/base.css">
   <title>Emmanuel</title>
 </head>
@@ -25,6 +27,7 @@
       </div>
 
       <nav>
+        <button class="material-symbols-outlined" onclick="toggleMenu()">linear_scale</button>
         <a href="">About <sub></sub></a>
         <a href="">Services <sub></sub></a>
         <a href="">Projects <sub></sub></a>
@@ -32,7 +35,7 @@
       </nav>
 
       <legend>
-        <a href="tel:+233558420368"> <i class="material-symbols-outlined">smartphone</i> | +233 55 842 0368</a>
+        <a href="tel:+233558420368"> <i class="material-symbols-outlined">call</i> +233 55 842 0368</a>
       </legend>
 
     </section>
@@ -43,8 +46,15 @@
       }
 
       .topNav h1 {
-        font-size: 1.8rem;
-        /* font-weight: 600 !important; */
+        font-size: 3rem;
+      }
+
+      .topNav button {
+        display: none;
+        width: 35px;
+        height: 35px;
+        background: var(--theme);
+        border-radius: 0 0 5px 0;
       }
 
       .topNav {
@@ -83,23 +93,23 @@
       }
 
       .topNav legend a {
-        /* background: black; */
-        /* color: white; */
-        /* padding: 5px; */
         display: flex;
         align-items: center;
-        /* border-radius: 40px; */
+        border-top: 1px solid darkgray;
+        border-bottom: 1px solid darkgray;
+        color: rgb(96, 96, 96);
+        padding: 3px;
       }
     </style>
 
     <section class="headBox">
       <section class="left">
         <article>
-          <strong>We have Design Experience</strong>
+          <strong>Let's Build Together</strong>
           <p>
-            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nihil libero dicta atque deserunt
-              placeat quas ipsam ab error iure, cum soluta odit fuga reprehenderit. Nostrum eveniet pariatur eligendi
-              sunt?</small>
+            <small>I'm a web developer who specializes in building powerful websites and apps. I've helped businesses of
+              all
+              sizes increase their sales with my custom-designed and developed websites</small>
           </p>
           <button>Lets Talk <i class="material-symbols-outlined">send</i></button>
         </article>
@@ -115,29 +125,59 @@
       <section class="right">
         <div class="imgBox">
           <img src="images/abdul.jpeg" alt="">
+          <p>
+            <span>Emmanuel Yankson</span>
+            <small>Web Developer</small>
+          </p>
         </div>
       </section>
       <style>
         .imgBox {
-          width: 240px;
-          height: 350px;
+          position: relative;
           border-top: 3px solid var(--theme);
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          overflow: hidden;
-          border-radius: 300px;
+          border-bottom: 3px solid var(--theme);
+          display: flex;
+          align-items: center;
+          border-radius: 40%;
+          /* border-radius: 40% 40% 0 0; */
         }
 
         .imgBox img {
-          width: 100%;
+          width: 240px;
+          height: 350px;
+          border-radius: 300px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
           object-fit: cover;
-          height: 100%;
+          z-index: 5;
+        }
+
+        .imgBox p {
+          position: absolute;
+          padding: 10px;
+          border-radius: 3px;
+          display: flex;
+          flex-direction: column;
+          left: -50px;
+          background: wheat;
+          z-index: 10;
+        }
+
+        @media all and (max-width:300px) {
+          .imgBox p {
+            left: 0;
+            /* width: 100%; */
+          }
+        }
+
+        .imgBox p span {
+          font-family: 'Alegreya Sans SC', sans-serif;
         }
       </style>
     </section>
 
     <style>
       .headBox {
-        margin-top: 15vh;
+        margin-top: 10vh;
         display: grid;
         gap: 2rem;
         grid-template-columns: 1fr 1fr;
@@ -197,9 +237,10 @@
       </section> -->
       <header>
         <h3>Services<sub></sub></h3>
-        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores veniam nostrum nam soluta sunt.
-          Molestias distinctio nihil excepturi ut minus, eum totam vero a dicta at quos inventore doloremque
-          voluptatibus.</small>
+        <small>I offer all kinds of services from Content management system (CMS) development services to creating a
+          website that is easy to update and maintain. Also
+          building fast and responsive websites that are optimized for search engines
+        </small>
       </header>
 
       <section class="services">
@@ -340,9 +381,8 @@
       <section class="left">
         <header>
           <h3>Skills & Experience <sub></sub></h3>
-          <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis suscipit voluptatum ut possimus id
-            atque eveniet fuga provident doloremque. Recusandae minima magni, quibusdam quasi eveniet consequatur eaque
-            fugiat adipisci assumenda.</small>
+          <small>With 5 years of experience coupled with a passion for building seamless digital experiences, I am dedicated to crafting web solutions that
+            not only meet but exceed expectations.</small>
         </header>
 
         <section class="skills">
@@ -361,10 +401,10 @@
         <div class="exp">
           <span>
             <i class="material-symbols-outlined">work_history</i>
-            <small>2012 - 2015</small>
+            <small>2018 - 2015</small>
           </span>
           <p>
-            <span>UI/UX Design</span>
+            <span>Web Development</span>
             <small>Amazon Inc.</small>
           </p>
         </div>
@@ -375,18 +415,18 @@
             <small>2012 - 2015</small>
           </span>
           <p>
-            <span>UI/UX Design</span>
+            <span>Mobile Development</span>
             <small>Amazon Inc.</small>
           </p>
         </div>
         <div class="exp">
           <span>
             <i class="material-symbols-outlined">work_history</i>
-            <small>2012 - 2015</small>
+            <small>2018 - 2020</small>
           </span>
           <p>
-            <span>UI/UX Design</span>
-            <small>Amazon Inc.</small>
+            <span>SEO Optimization</span>
+            <small>Softnage.</small>
           </p>
         </div>
         <div class="exp">
@@ -458,6 +498,10 @@
       </header>
 
       <section class="projects">
+        <a href="https://alphadinar.github.io/techlup/" target="_blank" class="preview">
+          <img src="images/techlup.JPG" alt="">
+          <i class="material-symbols-outlined">desktop_windows</i>
+        </a>
         <a href="https://devnpixels.github.io/Hostel/" target="_blank" class="preview">
           <img src="images/head5.JPG" alt="">
           <i class="material-symbols-outlined">desktop_windows</i>
@@ -467,7 +511,6 @@
           <i class="material-symbols-outlined">desktop_windows</i>
         </a>
       </section>
-      <!-- <img src="" alt=""> -->
 
       <style>
         .projectBox {
@@ -480,6 +523,7 @@
           display: flex;
           gap: 2rem;
           flex-wrap: wrap;
+          justify-content: space-between;
         }
 
         .preview {
@@ -496,8 +540,6 @@
           color: wheat;
           cursor: pointer;
           display: flex;
-          /* width: 100%; */
-          /* height: 100%; */
           border-radius: 15px;
           align-items: center;
           padding: 10px;
@@ -505,7 +547,7 @@
         }
 
         .projects img {
-          width: 500px;
+          width: 550px;
           border-radius: 15px;
         }
       </style>
@@ -568,12 +610,64 @@
       .topNav nav {
         flex-direction: column;
         gap: 0;
-        /* display: none; */
+        background: black;
+        width: 150px;
+        z-index: 10;
+        border-radius: 0 0 10px 0;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        left: -190px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        transition: 0.4s ease;
+      }
+
+      .topNav nav.change {
+        left: 0;
+      }
+
+      .topNav nav a {
+        color: white;
+      }
+
+      .topNav button {
+        position: absolute;
+        left: 100%;
+        top: 0;
         align-items: center;
+        justify-content: center;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
       }
     }
   </style>
 
+  <script>
+    const minMenu = document.querySelector('.topNav nav');
+    const toggleMenu = () => {
+      minMenu.classList.toggle('change')
+    }
+  </script>
+  <script>
+    const services = document.querySelectorAll('.service');
+    const exps = document.querySelectorAll('.exp');
+
+    services.forEach((el) => {
+      el.dataset.aos = "fade-up";
+    })
+
+    exps.forEach((el) => {
+      el.dataset.aos = "fade-up";
+    })
+
+  </script>
+
+
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

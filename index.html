@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/eb75260fb3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+    integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/base.css">
+  <title>Emmanuel</title>
+</head>
+
+<body>
+  <section class="page">
+    <section class="topNav">
+      <div>
+        <h1>dp</h1>
+      </div>
+
+      <nav>
+        <a href="">About <sub></sub></a>
+        <a href="">Services <sub></sub></a>
+        <a href="">Projects <sub></sub></a>
+        <a href="">Testimonials <sub></sub></a>
+      </nav>
+
+      <legend>
+        <a href="tel:+233558420368"> <i class="material-symbols-outlined">smartphone</i> | +233 55 842 0368</a>
+      </legend>
+
+    </section>
+
+    <style>
+      :root {
+        --primary: rgb(106, 106, 106)
+      }
+
+      .topNav h1 {
+        font-size: 1.8rem;
+        /* font-weight: 600 !important; */
+      }
+
+      .topNav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+      }
+
+      .topNav nav {
+        display: flex;
+        gap: 2rem;
+        margin: auto;
+      }
+
+      .topNav nav a {
+        font-size: 0.95rem;
+        color: rgb(50, 50, 50);
+        color: var(--primary);
+      }
+
+      .topNav nav a sub {
+        display: block;
+        height: 3px;
+        width: 0px;
+        transition: 0.4s ease;
+        background: var(--primary);
+      }
+
+      .topNav nav a:hover sub {
+        width: 30px;
+      }
+
+      .topNav legend {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .topNav legend a {
+        /* background: black; */
+        /* color: white; */
+        /* padding: 5px; */
+        display: flex;
+        align-items: center;
+        /* border-radius: 40px; */
+      }
+    </style>
+
+    <section class="headBox">
+      <section class="left">
+        <article>
+          <strong>We have Design Experience</strong>
+          <p>
+            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nihil libero dicta atque deserunt
+              placeat quas ipsam ab error iure, cum soluta odit fuga reprehenderit. Nostrum eveniet pariatur eligendi
+              sunt?</small>
+          </p>
+          <button>Lets Talk <i class="material-symbols-outlined">send</i></button>
+        </article>
+
+        <div>
+          <span>Check Out my</span>
+          <p>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </p>
+        </div>
+      </section>
+      <section class="right">
+        <div class="imgBox">
+          <img src="images/abdul.jpeg" alt="">
+        </div>
+      </section>
+      <style>
+        .imgBox {
+          width: 240px;
+          height: 350px;
+          border-top: 3px solid var(--theme);
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          overflow: hidden;
+          border-radius: 300px;
+        }
+
+        .imgBox img {
+          width: 100%;
+          object-fit: cover;
+          height: 100%;
+        }
+      </style>
+    </section>
+
+    <style>
+      .headBox {
+        margin-top: 15vh;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .headBox .left {
+        display: flex;
+        flex-direction: column;
+        gap: 8vh;
+      }
+
+      .headBox .left div p {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .headBox .left div i {
+        font-size: 1rem;
+      }
+
+      .headBox .left article {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+      }
+
+      .headBox .left article strong {
+        font-size: 3rem;
+      }
+
+      .headBox .left article p {
+        display: flex;
+        gap: 0.5rem;
+      }
+
+      .headBox .left article button {
+        color: white;
+        background: var(--button);
+        padding: 5px;
+        border-radius: 7px;
+        font-size: 1.1rem;
+        display: flex;
+        gap: 0.3rem;
+        align-items: center;
+      }
+
+      .headBox .right {
+        display: flex;
+        justify-content: flex-end;
+      }
+    </style>
+
+    <section class="serviceBox">
+      <!-- <section class="left">
+
+      </section> -->
+      <header>
+        <h3>Services<sub></sub></h3>
+        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores veniam nostrum nam soluta sunt.
+          Molestias distinctio nihil excepturi ut minus, eum totam vero a dicta at quos inventore doloremque
+          voluptatibus.</small>
+      </header>
+
+      <section class="services">
+        <section>
+          <div class="service">
+            <i class="material-symbols-outlined">workspace_premium</i>
+            <strong>
+              Website Development
+            </strong>
+            <div>
+              <a href="" class="material-symbols-outlined">east</a>
+            </div>
+          </div>
+          <div class="service">
+            <i class="material-symbols-outlined">workspace_premium</i>
+            <strong>
+              Web App & Sass
+            </strong>
+            <div>
+              <a href="" class="material-symbols-outlined">east</a>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="service">
+            <i class="material-symbols-outlined">workspace_premium</i>
+            <strong>
+              Mobile App Development
+            </strong>
+            <div>
+              <a href="" class="material-symbols-outlined">east</a>
+            </div>
+          </div>
+          <div class="service">
+            <i class="material-symbols-outlined">workspace_premium</i>
+            <strong>
+              SEO Optimization
+            </strong>
+            <div>
+              <a href="" class="material-symbols-outlined">east</a>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="service">
+            <i class="material-symbols-outlined">workspace_premium</i>
+            <strong>
+              Web UI/UX Design
+            </strong>
+            <div>
+              <a href="" class="material-symbols-outlined">east</a>
+            </div>
+          </div>
+          <div class="service">
+            <i class="material-symbols-outlined">workspace_premium</i>
+            <strong>
+              Mobile UI/UX Design
+            </strong>
+            <div>
+              <a href="" class="material-symbols-outlined">east</a>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+    <style>
+      .serviceBox {
+        background: var(--theme);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 2rem;
+      }
+
+      .serviceBox header {
+        max-width: calc(50% - 1.5rem);
+      }
+
+      .services {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+      }
+
+      .services section {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+      }
+
+      .service {
+        padding: 30px;
+        border-top: 2px solid black;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .service i {
+        font-size: 2rem;
+      }
+
+      .service strong {
+        font-size: 2rem;
+        font-weight: 400;
+      }
+
+      .service div {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .service div a {
+        background: var(--button);
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: var(--theme);
+      }
+
+      h3 {
+        font-size: 2rem;
+      }
+
+      h3 sub {
+        display: block;
+        height: 4px;
+        width: 50px;
+        background: black;
+      }
+    </style>
+
+    <section class="skillBox">
+      <section class="left">
+        <header>
+          <h3>Skills & Experience <sub></sub></h3>
+          <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis suscipit voluptatum ut possimus id
+            atque eveniet fuga provident doloremque. Recusandae minima magni, quibusdam quasi eveniet consequatur eaque
+            fugiat adipisci assumenda.</small>
+        </header>
+
+        <section class="skills">
+          <i class='bx bxl-html5'></i>
+          <i class='bx bxl-css3'></i>
+          <i class='bx bxl-tailwind-css'></i>
+          <i class='bx bxl-flutter'></i>
+          <i class='bx bxl-python'></i>
+          <i class='bx bxl-react'></i>
+          <i class='bx bxl-django'></i>
+        </section>
+
+      </section>
+      <section class="right">
+
+        <div class="exp">
+          <span>
+            <i class="material-symbols-outlined">work_history</i>
+            <small>2012 - 2015</small>
+          </span>
+          <p>
+            <span>UI/UX Design</span>
+            <small>Amazon Inc.</small>
+          </p>
+        </div>
+
+        <div class="exp">
+          <span>
+            <i class="material-symbols-outlined">work_history</i>
+            <small>2012 - 2015</small>
+          </span>
+          <p>
+            <span>UI/UX Design</span>
+            <small>Amazon Inc.</small>
+          </p>
+        </div>
+        <div class="exp">
+          <span>
+            <i class="material-symbols-outlined">work_history</i>
+            <small>2012 - 2015</small>
+          </span>
+          <p>
+            <span>UI/UX Design</span>
+            <small>Amazon Inc.</small>
+          </p>
+        </div>
+        <div class="exp">
+          <span>
+            <i class="material-symbols-outlined">work_history</i>
+            <small>2012 - 2015</small>
+          </span>
+          <p>
+            <span>UI/UX Design</span>
+            <small>Amazon Inc.</small>
+          </p>
+        </div>
+      </section>
+    </section>
+
+
+    <style>
+      .skillBox {
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .skillBox .left {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .skillBox .left .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        /* justify-content: space-around; */
+      }
+
+      .skillBox .left i {
+        font-size: 2rem;
+      }
+
+      .exp {
+        border-top: 2px solid black;
+        display: flex;
+        gap: 3rem;
+        padding: 25px;
+        align-items: flex-start;
+      }
+
+      .exp span {
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+      }
+
+      .exp p {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .exp p small {
+        color: rgb(96, 96, 96);
+      }
+    </style>
+
+    <section class="projectBox">
+      <header>
+        <h3>Project Box <sub></sub></h3>
+        <small>Click for a live preview</small>
+      </header>
+
+      <section class="projects">
+        <a href="https://devnpixels.github.io/Hostel/" target="_blank" class="preview">
+          <img src="images/head5.JPG" alt="">
+          <i class="material-symbols-outlined">desktop_windows</i>
+        </a>
+        <a href="https://devnpixels.github.io/Hotel/" target="_blank" class="preview">
+          <img src="images/head6.JPG" alt="">
+          <i class="material-symbols-outlined">desktop_windows</i>
+        </a>
+      </section>
+      <!-- <img src="" alt=""> -->
+
+      <style>
+        .projectBox {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+        }
+
+        .projects {
+          display: flex;
+          gap: 2rem;
+          flex-wrap: wrap;
+        }
+
+        .preview {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+        }
+
+        .preview i {
+          position: absolute;
+          font-size: 4rem;
+          background: rgba(0, 0, 0, 0.484);
+          color: wheat;
+          cursor: pointer;
+          display: flex;
+          /* width: 100%; */
+          /* height: 100%; */
+          border-radius: 15px;
+          align-items: center;
+          padding: 10px;
+          justify-content: center;
+        }
+
+        .projects img {
+          width: 500px;
+          border-radius: 15px;
+        }
+      </style>
+
+    </section>
+
+    <style>
+      .projectBox {
+        background: var(--theme);
+      }
+    </style>
+  </section>
+
+  <style>
+    @media all and (max-width:1050px) {
+      .topNav {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .headBox {
+        display: flex;
+        margin-top: 0;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .headBox .left,
+      .headBox .left article {
+        align-items: center;
+        text-align: center;
+      }
+
+      .headBox .left div p {
+        justify-content: center;
+      }
+
+      .serviceBox header {
+        max-width: calc(100% - 1.5rem);
+      }
+
+      .serviceBox .services section {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .skillBox {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    @media all and (max-width:600px) {
+      .projects img {
+        width: 80%;
+      }
+    }
+
+    @media all and (max-width:500px) {
+      .topNav nav {
+        flex-direction: column;
+        gap: 0;
+        /* display: none; */
+        align-items: center;
+      }
+    }
+  </style>
+
+</body>
+
+</html>

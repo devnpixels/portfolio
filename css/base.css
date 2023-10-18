@@ -35,6 +35,16 @@ body{
   display: flex;
   flex-direction: column;
 }
+body::-webkit-scrollbar{
+  width: 10px;
+  background: black;
+  /* background: transparent; */
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb{
+  background: var(--theme);
+  border-radius: 10px;
+}
 
 .topNav,.headBox,.serviceBox,.skillBox,.projectBox,footer{
   width: 80%;
